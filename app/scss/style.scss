@@ -81,11 +81,15 @@ main {
   height: 18px;
 }
 .navbar {
-  @extend %Sans-600;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 24px 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 60px;
+  &__inner {
+    @extend %Sans-600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
   &-logo {
     width: 79.53px;
     height: 18px;
@@ -107,6 +111,50 @@ main {
     }
     &__link {
       text-decoration: none;
+    }
+  }
+}
+.title {
+  display: inline-block;
+  @extend %Sans-700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 2.30625px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -15px;
+    background-color: #00a4e5;
+  }
+}
+.about {
+  text-align: center;
+  &__inner {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    &-info {
+      max-width: 406px;
+      width: 100%;
+      text-align: left;
+    }
+    &-img + .about__inner-img {
+      margin-left: 20px;
+    }
+  }
+  &__info {
+    font-size: 20px;
+    line-height: 23px;
+    @extend %Sans-700;
+    letter-spacing: 0.1875px;
+    margin-bottom: 30px;
+    span {
+      color: #00a4e5;
     }
   }
 }
