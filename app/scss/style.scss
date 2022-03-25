@@ -244,3 +244,140 @@ main {
     margin-bottom: 35px;
   }
 }
+
+.news {
+  background-color: #171819;
+  padding: 40px 0;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-title {
+    color: #fff;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.846154px;
+    @extend %Sans-700;
+  }
+  &-form {
+    margin-left: 70px;
+    display: flex;
+  }
+  &__input-mail {
+    width: 250px;
+    height: 40px;
+    padding: 11px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07px;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.07px;
+    }
+  }
+  &__input-btn {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.footer {
+  padding: 42px 0 0px;
+  background-color: #141a20;
+  &__inner {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+  &-titles {
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.846154px;
+    margin-bottom: 20px;
+  }
+  &__company {
+    max-width: 250px;
+    width: 100%;
+    &-logo {
+      height: 23px;
+      width: 102px;
+      margin-bottom: 15px;
+    }
+    &-descr {
+      font-size: 11px;
+      line-height: 19px;
+      letter-spacing: 0.85px;
+    }
+  }
+
+  &__links {
+    max-width: 262px;
+    width: 100%;
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      @extend %Sans-600;
+      font-size: 11px;
+      line-height: 227%;
+      letter-spacing: 0.846154px;
+    }
+    &-list {
+      max-width: 80px;
+    }
+    &-item {
+      margin-bottom: 5px;
+    }
+    &-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__contacts {
+    max-width: 141px;
+    width: 100%;
+    &-item {
+      margin-top: 20px;
+    }
+    &-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__social {
+    &-list {
+      display: flex;
+      max-width: 90px;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-items: center;
+    }
+    &-item {
+      margin-bottom: 10px;
+      margin-right: 17px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 23px 0;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.846154px;
+    background-color: #171819;
+  }
+}
