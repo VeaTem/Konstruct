@@ -197,4 +197,4 @@ exports.images = images;
 exports.fonts = series(fonts, fonts2, fontsStyle)
 exports.cleanDist = cleanDist;
 exports.build = series(cleanDist, images, build, htmlWebp);
-exports.default = parallel(images, styles, scripts, syncBrowser, watching);
+exports.default = parallel( styles, scripts, images, syncBrowser, watching);
